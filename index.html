@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html >
+<head>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>  
+    <title>Reto3</title>
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+    <b style="color: green" onclick="changeColor(this.parentNode)"><h1>ALQUILER DE JUEGOS</h1></b>
+
+    <b style="color: yellowgreen" onclick="changeColor(this.parentNode)"><h2>CATEGORY</h2></b>
+    
+	<div>
+	    <input type="text" id="Cname" placeholder="name">
+	    <input type="text" id="Cdescription" placeholder="description">
+
+	</div>
+	
+	<button onclick="guardarInformacionCategory()">Guardar</button>
+	<button onclick="traerInformacionCategory()">Consultar</button>
+	<div id="resultadoCategory"></div>	
+
+    <b style="color: yellowgreen" onclick="changeColor(this.parentNode)"><h2>GAMES</h2></b>
+
+    <div>
+	    <input type="text" id="name" placeholder="name">
+	    <input type="text" id="developer" placeholder="developer">
+	    <input type="number" id="year" placeholder="year">
+	    <input type="text" id="description" placeholder="description">
+
+	</div>
+	
+	<button onclick="guardarInformacionGames()">Guardar</button>
+	<button onclick="traerInformacionGames()">Consultar</button>
+	<div id="resultadoGames"></div>
+        
+    </div>
+   
+    <b style="color: yellowgreen" onclick="changeColor(this.parentNode)"><h2>CLIENT</h2></b>
+	<div>
+		<input type="text" id="email" placeholder="email">	    
+		<input type="text" id="password" placeholder="password">	    
+		<input type="text" id="nameClient" placeholder="name">
+	        <input type="number" id="age" placeholder="age">
+
+	</div>
+	
+	<button onclick="guardarInformacionClient()">Guardar</button>
+	<button onclick="traerInformacionClient()">Consultar</button>
+	<div id="resultadoClient"></div>	
+
+
+    <b style="color: yellowgreen" onclick="changeColor(this.parentNode)"><h2>MESSAGE</h2></b>
+	<div>
+	    
+	    <input type="text" id="messageText" placeholder="messageText">
+
+	</div>
+	
+	<button onclick="guardarInformacionMessage()">Guardar</button>
+	<button onclick="traerInformacionMessage()">Consultar</button>
+	<div id="resultadoMessage"></div>
+
+
+    <b style="color: yellowgreen" onclick="changeColor(this.parentNode)"><h2>RESERVATION</h2></b>
+	<div>
+	    
+        <input type="date" id="startDate" placeholder="startDate">
+            <input type="date" id="devolutionDate" placeholder="devolutionDate">
+            <input type="text" id="status" placeholder="status">
+    
+        </div>
+        
+        <button onclick="guardarInformacionReservation()">Guardar</button>
+        <button onclick="traerInformacionReservation()">Consultar</button>
+        <div id="resultadoReservation"></div>
+
+
+</body>
+</html>
